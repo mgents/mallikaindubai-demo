@@ -77,7 +77,7 @@ export default function HeroSection() {
         {/* Tagline */}
         {phase >= 5 && (
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 max-w-5xl px-4"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 whitespace-nowrap px-4"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             {tagline.split('').map((char, i) => (
