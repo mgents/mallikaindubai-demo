@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #FFFFFF;
+  --color-bg-dark: #050507;
+  --color-bg-deep: #0A0A12;
+  --color-text-primary: #000000;
+  --color-text-light: #FFFFFF;
+  --color-text-muted: rgba(255, 255, 255, 0.6);
+  --color-gold*: #D4A853;
+  --color-gold-light*: #E8C97A;
+  --color-gold-glow: rgba(212, 168, 83, 0.3);
+  --color-teal*: #0EA5E9;
+  --color-teal-light*: #38BDF8;
+  --color-teal-glow: rgba(14, 165, 233, 0.3);
+  --color-coral*: #FF6B6B;
+  --color-peach*: #FFB4A2;
+  --color-warm-glow: rgba(255, 107, 107, 0.2);
+  --color-glass-bg: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+  --color-glass-bg-light: rgba(0, 0, 0, 0.03);
+  --color-glass-border-light: rgba(0, 0, 0, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050507;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050507;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 168, 83, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 168, 83, 0.5);
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-light {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #D4A853, #F0D78C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Teal gradient text */
+.text-teal-gradient {
+  background: linear-gradient(135deg, #0EA5E9, #67E8F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Film grain overlay */
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+/* Animated grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Glow effects */
+.glow-gold {
+  box-shadow: 0 0 30px rgba(212, 168, 83, 0.15), 0 0 60px rgba(212, 168, 83, 0.05);
+}
+
+.glow-teal {
+  box-shadow: 0 0 30px rgba(14, 165, 233, 0.15), 0 0 60px rgba(14, 165, 233, 0.05);
+}
+
+/* Shimmer animation for CTA */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shimmer-border {
+  background: linear-gradient(
+    90deg,
+    rgba(212, 168, 83, 0.0) 0%,
+    rgba(212, 168, 83, 0.5) 50%,
+    rgba(212, 168, 83, 0.0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Section transition helper */
+.section-dark {
+  background: #050507;
+}
+
+.section-light {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/* Utility classes for custom colors (Tailwind v4 compatible) */
+.text-gold {
+  color: #D4A853;
+}
+
+.text-gold-light {
+  color: #E8C97A;
+}
+
+.text-teal {
+  color: #0EA5E9;
+}
+
+.text-teal-light {
+  color: #38BDF8;
+}
+
+.bg-gold {
+  background-color: #D4A853;
+}
+
+.bg-teal {
+  background-color: #0EA5E9;
+}
+
+.border-gold {
+  border-color: #D4A853;
+}
+
+.border-teal {
+  border-color: #0EA5E9;
+}
+
+.text-coral {
+  color: #FF6B6B;
+}
+
+.text-peach {
+  color: #FFB4A2;
+}
+
+.bg-coral {
+  background-color: #FF6B6B;
+}
+
+.bg-peach {
+  background-color: #FFB4A2;
+}
+
+.border-coral {
+  border-color: #FF6B6B;
+}
+
+.border-peach {
+  border-color: #FFB4A2;
+}
+
+/* Persona theme backgrounds */
+.theme-institutional {
+  background: radial-gradient(ellipse at 30% 50%, rgba(14, 165, 233, 0.08), transparent 70%),
+              #050507;
+}
+
+.theme-cashflow {
+  background: radial-gradient(ellipse at 70% 50%, rgba(212, 168, 83, 0.08), transparent 70%),
+              #0A0A12;
+}
+
+.theme-personal {
+  background: radial-gradient(ellipse at 50% 50%, rgba(255, 107, 107, 0.06), rgba(212, 168, 83, 0.06) 50%, transparent 80%),
+              #050507;
+}
