@@ -16,7 +16,7 @@ export default function GoldenVisaPathway() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <SectionWrapper id="golden-visa" className="theme-personal">
+    <SectionWrapper id="golden-visa" className="theme-entry">
       <div className="container mx-auto px-6" ref={ref}>
         <SectionHeading
           number="14"

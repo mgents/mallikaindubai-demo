@@ -22,7 +22,7 @@ export default function MoveInCostPlanner() {
   }, 0)
 
   return (
-    <SectionWrapper id="move-in-cost" className="theme-personal">
+    <SectionWrapper id="move-in-cost" className="theme-entry">
       <div className="container mx-auto px-6" ref={ref}>
         <SectionHeading
           number="15"

@@ -16,7 +16,7 @@ export default function PredictiveYield() {
   const [selectedScenario, setSelectedScenario] = useState('Base')
 
   return (
-    <SectionWrapper id="predictive-yield" className="theme-institutional">
+    <SectionWrapper id="predictive-yield" className="theme-growth">
       <div className="container mx-auto px-6" ref={ref}>
         <SectionHeading
           number="06"

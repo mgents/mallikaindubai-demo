@@ -14,7 +14,7 @@ export default function DeveloperScorecard() {
   const [selectedDev, setSelectedDev] = useState<string | null>(null)
 
   return (
-    <SectionWrapper id="developer-scorecard" className="theme-institutional">
+    <SectionWrapper id="developer-scorecard" className="theme-growth">
       <div className="container mx-auto px-6" ref={ref}>
         <SectionHeading
           number="08"

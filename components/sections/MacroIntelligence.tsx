@@ -15,7 +15,7 @@ export default function MacroIntelligence() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <SectionWrapper id="macro-intelligence" className="theme-institutional">
+    <SectionWrapper id="macro-intelligence" className="theme-growth">
       <div className="container mx-auto px-6" ref={ref}>
         <SectionHeading
           number="09"

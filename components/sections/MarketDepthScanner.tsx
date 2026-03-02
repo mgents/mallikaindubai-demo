@@ -26,9 +26,9 @@ export default function MarketDepthScanner() {
   }))
 
   return (
-    <SectionWrapper id="market-depth" className="theme-institutional">
+    <SectionWrapper id="market-depth" className="theme-growth">
       <div className="container mx-auto px-6" ref={ref}>
-        <PersonaBadge type="institutional" className="mb-12" />
+        <PersonaBadge type="growth" className="mb-12" />
 
         <SectionHeading
           number="05"

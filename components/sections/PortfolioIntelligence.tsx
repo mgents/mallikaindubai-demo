@@ -15,7 +15,7 @@ export default function PortfolioIntelligence() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <SectionWrapper id="portfolio-intelligence" className="theme-institutional">
+    <SectionWrapper id="portfolio-intelligence" className="theme-growth">
       <div className="container mx-auto px-6" ref={ref}>
         <SectionHeading
           number="07"

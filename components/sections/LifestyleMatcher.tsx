@@ -35,9 +35,9 @@ export default function LifestyleMatcher() {
   ).slice(0, 3)
 
   return (
-    <SectionWrapper id="lifestyle-matcher" className="theme-personal">
+    <SectionWrapper id="lifestyle-matcher" className="theme-entry">
       <div className="container mx-auto px-6" ref={ref}>
-        <PersonaBadge type="personal" className="mb-12" />
+        <PersonaBadge type="entry" className="mb-12" />
 
         <SectionHeading
           number="13"

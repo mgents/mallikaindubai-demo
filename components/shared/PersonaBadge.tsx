@@ -5,27 +5,27 @@ import { useRef } from 'react'
 import { Building2, DollarSign, Home } from 'lucide-react'
 
 interface PersonaBadgeProps {
-  type: 'institutional' | 'cashflow' | 'personal'
+  type: 'growth' | 'cashflow' | 'entry'
   className?: string
 }
 
 const badgeConfig = {
-  institutional: {
+  growth: {
     icon: Building2,
-    label: 'FOR INSTITUTIONAL INVESTORS',
-    emoji: '🏦',
+    label: 'FOR GROWTH SEEKERS',
+    emoji: '🎯',
     color: 'teal',
   },
   cashflow: {
     icon: DollarSign,
-    label: 'FOR CASHFLOW INVESTORS',
+    label: 'FOR CASHFLOW SEEKERS',
     emoji: '💰',
     color: 'gold',
   },
-  personal: {
+  entry: {
     icon: Home,
-    label: 'FOR YOUR FAMILY & HOME',
-    emoji: '🏡',
+    label: 'FOR ENTRY SEEKERS',
+    emoji: '🚀',
     color: 'coral',
   },
 }

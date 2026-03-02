@@ -15,7 +15,7 @@ const PartnerEnablement = dynamic(() => import('@/components/sections/PartnerEna
 const ComplianceLayer = dynamic(() => import('@/components/sections/ComplianceLayer'))
 const ClosingCTA = dynamic(() => import('@/components/sections/ClosingCTA'))
 
-// NEW: Institutional Investor sections (teal theme)
+// NEW: Growth Seeker sections (teal theme)
 const MarketDepthScanner = dynamic(() => import('@/components/sections/MarketDepthScanner'))
 const PredictiveYield = dynamic(() => import('@/components/sections/PredictiveYield'))
 const PortfolioIntelligence = dynamic(() => import('@/components/sections/PortfolioIntelligence'))
@@ -27,7 +27,7 @@ const RentalIncomeOptimizer = dynamic(() => import('@/components/sections/Rental
 const TenantMarketIntelligence = dynamic(() => import('@/components/sections/TenantMarketIntelligence'))
 const TrueCostOfOwnership = dynamic(() => import('@/components/sections/TrueCostOfOwnership'))
 
-// NEW: Personal Home Buyer sections (warm gradient theme)
+// NEW: Entry Seeker sections (warm gradient theme)
 const LifestyleMatcher = dynamic(() => import('@/components/sections/LifestyleMatcher'))
 const GoldenVisaPathway = dynamic(() => import('@/components/sections/GoldenVisaPathway'))
 const MoveInCostPlanner = dynamic(() => import('@/components/sections/MoveInCostPlanner'))
@@ -44,7 +44,7 @@ export default function Home() {
       <SignalLayer />
       <UnderwritingTools />
 
-      {/* 🏦 INSTITUTIONAL INVESTOR BLOCK (5-9) */}
+      {/* 🎯 GROWTH SEEKER BLOCK (5-9) */}
       <MarketDepthScanner />
       <PredictiveYield />
       <PortfolioIntelligence />
@@ -56,7 +56,7 @@ export default function Home() {
       <TenantMarketIntelligence />
       <TrueCostOfOwnership />
 
-      {/* 🏡 PERSONAL HOME BUYER BLOCK (13-15) */}
+      {/* 🚀 ENTRY SEEKER BLOCK (13-15) */}
       <LifestyleMatcher />
       <GoldenVisaPathway />
       <MoveInCostPlanner />
